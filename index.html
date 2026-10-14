@@ -255,6 +255,8 @@ section{position:relative}
 .qa[open] summary i::after{transform:rotate(0)}
 .qa p{padding:0 22px 20px;color:var(--muted);font-size:15px}
 @media (max-width:1040px){.faq-grid{grid-template-columns:1fr;gap:30px}}
+.howbuy{margin-top:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px 28px;border-radius:20px;border:1px solid var(--line2);background:linear-gradient(135deg,rgba(201,151,63,.1),rgba(16,35,58,.5))}
+.howbuy p{font:600 18px/1.4 Archivo;color:var(--text);margin:0}
 /* who */
 .who{display:grid;grid-template-columns:320px 1fr;gap:50px;align-items:start}
 .tabs{display:grid;gap:10px}
@@ -498,7 +500,6 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
     <nav class="links" id="links">
       <a href="#services">Services</a>
       <a href="#work">Proof</a>
-      <a href="#plans">Plans</a>
       <a href="#questions">Questions</a>
       <a href="#contact" class="btn gold sm magnet">Get a free review</a>
     </nav>
@@ -532,11 +533,6 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
       <div class="hero-ctas fade-up" style="transition-delay:.75s">
         <a href="#contact" class="btn gold magnet">Get a free review <span class="arr">→</span></a>
         <a href="#work" class="btn ghost magnet">See the proof</a>
-      </div>
-      <div class="trust fade-up" style="transition-delay:.9s">
-        <div><b>6 hrs</b>a week back for a consultant</div>
-        <div><b>$2,500</b>a year saved for a studio</div>
-        <div><b>6</b>podcast bookings for a coach</div>
       </div>
     </div>
     <div class="arch-stage" id="archStage" aria-hidden="true">
@@ -603,6 +599,10 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
         <ul><li>Partner and sponsor outreach</li><li>Pitch emails and proposals</li><li>Follow-up tracking</li><li>Quarterly review and 90-day plan</li></ul>
       </article>
     </div>
+    <div class="howbuy" data-reveal>
+      <p>Choose one area, one side, or everything — monthly or as a one-time project.</p>
+      <a href="#contact" class="btn gold sm magnet">Get a quote <span class="arr">→</span></a>
+    </div>
   </div>
 </section>
 
@@ -617,47 +617,6 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
       <div class="step" data-reveal style="--d:0"><div class="dot">1</div><h3>Free review</h3><p>We look at what you pay for and what eats your time, and show you where you can save.</p></div>
       <div class="step" data-reveal style="--d:1"><div class="dot">2</div><h3>A clear plan</h3><p>A fixed price per project or one simple monthly plan. No hidden fees, cancel anytime.</p></div>
       <div class="step" data-reveal style="--d:2"><div class="dot">3</div><h3>We handle it</h3><p>We do the work and send a short update, so you always know what was done.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PLANS -->
-<section class="band" id="plans" style="padding-top:40px">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><span class="eyebrow" data-reveal>Plans</span><h2 data-reveal style="--d:1">Plans built around <span class="serif grad">results.</span></h2></div>
-      <p class="lead" data-reveal style="--d:2">Every plan is a fixed monthly price, quoted after a free review, so you only pay for what your business needs.</p>
-    </div>
-    <div class="plans p4">
-      <div class="plan p4c" data-reveal style="--d:0">
-        <h3>Website Care</h3>
-        <p class="outcome">Your site stays safe, current and fast.</p>
-        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Security monitoring and updates</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Automatic backups</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Small edits when you need them</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>A short monthly report</li></ul>
-        <a href="#contact" class="btn ghost" data-plan="Website Care">Get a quote</a>
-      </div>
-      <div class="plan p4c" data-reveal style="--d:1">
-        <h3>Support</h3>
-        <p class="outcome">Your week stops slipping.</p>
-        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Website Care</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Inbox, scheduling and follow-ups handled</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>No missed renewals or late fees</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Regular savings checks</li></ul>
-        <a href="#contact" class="btn ghost" data-plan="Support">Get a quote</a>
-      </div>
-      <div class="plan p4c" data-reveal style="--d:2">
-        <h3>Development</h3>
-        <p class="outcome">Your business stays visible and keeps growing.</p>
-        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>A monthly promotion plan and captions</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Google listing kept current</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Partner and opportunity outreach</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>A monthly results report</li></ul>
-        <a href="#contact" class="btn ghost" data-plan="Development">Get a quote</a>
-      </div>
-      <div class="plan p4c pop" data-reveal style="--d:3"><span class="badge">Most complete</span>
-        <h3>Support &amp; Development</h3>
-        <p class="outcome">Run smoother and grow, with one partner.</p>
-        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Support and Development</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Priority replies</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Quarterly growth review and 90-day plan</li></ul>
-        <a href="#contact" class="btn gold" data-plan="Support &amp; Development">Get a quote</a>
-      </div>
-    </div>
-    <div class="oneoff" data-reveal>
-      <span class="ol">One-time projects</span>
-      <div class="otags"><span>New website or redesign</span><span>Website rescue and security</span><span>Press kit or professional bio</span><span>Launch package</span><span>Opportunity and cost audit</span></div>
-      <small>Fixed price, agreed up front. Personal assistant help is available as an add-on to any plan.</small>
     </div>
   </div>
 </section>
@@ -807,7 +766,7 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
           <div class="field"><label for="ftype">You are a…</label><select id="ftype" name="client_type"><option>Solo founder</option><option>Small business</option><option>Creator or label</option><option>Other</option></select></div>
           <div class="field"><label for="ftime">Timeline</label><select id="ftime" name="timeline"><option>As soon as possible</option><option>This month</option><option>In the next few months</option><option>Just exploring</option></select></div>
         </div>
-        <div class="field"><label for="fplan">Plan you're interested in <span style="color:var(--dim);font-weight:500">(optional)</span></label><select id="fplan" name="plan"><option>Not sure yet</option><option>Website Care</option><option>Support</option><option>Development</option><option>Support &amp; Development</option><option>One-time project</option></select></div>
+        <div class="field"><label for="fplan">What would you like? <span style="color:var(--dim);font-weight:500">(optional)</span></label><select id="fplan" name="plan"><option>Not sure yet</option><option>One service area</option><option>Support — keep it running</option><option>Development — help it grow</option><option>Everything</option><option>One-time project</option></select></div>
         <div class="field"><label for="fmsg">What's going on? <span style="color:var(--dim);font-weight:500">(optional)</span></label><textarea id="fmsg" name="message" placeholder="A sentence or two about what you need help with"></textarea></div>
       </div>
       <div class="fstep" data-step="2">
@@ -842,7 +801,7 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
         <a href="#top" class="brand"><svg viewBox="14 18 172 160" aria-hidden="true"><path fill="#e8eef4" d="M20 107.7H52V174.5H20Z"/><path fill="#e8eef4" d="M148 107.7H180V174.5H148Z"/><path fill="#e8eef4" d="M20.00 102.50 A80 80 0 0 1 33.78 57.61 L59.70 76.43 A48 48 0 0 0 52.00 102.50Z"/><path fill="#e8eef4" d="M36.84 53.40 A80 80 0 0 1 72.82 27.26 L82.72 57.72 A48 48 0 0 0 62.75 72.22Z"/><path fill="#e8eef4" d="M127.18 27.26 A80 80 0 0 1 163.16 53.40 L137.25 72.22 A48 48 0 0 0 117.28 57.72Z"/><path fill="#e8eef4" d="M166.22 57.61 A80 80 0 0 1 180.00 102.50 L148.00 102.50 A48 48 0 0 0 140.30 76.43Z"/><path fill="#c9973f" d="M77.76 25.65 A80 80 0 0 1 122.24 25.65 L112.34 56.11 A48 48 0 0 0 87.66 56.11Z"/></svg><span>Keystone Support Co.<small>Est. 2024</small></span></a>
         <p>Support and development for solo founders and creatives — one partner that keeps the business running and helps it grow.</p>
       </div>
-      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#work">Proof</a></li><li><a href="#plans">Plans</a></li><li><a href="#questions">Questions</a></li><li><a href="#privacy">Privacy note</a></li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#work">Proof</a></li><li><a href="#questions">Questions</a></li><li><a href="#privacy">Privacy note</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><a href="#contact">Free review</a></li><li><a href="#contact">Request a quote</a></li><li>Remote · clients anywhere</li></ul></div>
     </div>
     <details class="privacy" id="privacy">
