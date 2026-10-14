@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keystone Support Co. — Business support &amp; development</title>
-<meta name="description" content="Keystone Support Co. keeps your business running and helps it grow — admin, website care, cost savings, promotion and new opportunities from one partner. Established 2024.">
+<meta name="description" content="The right hand solo founders and creatives don't have: admin, website care, cost savings, promotion and new opportunities from one partner. Established 2024.">
 <meta property="og:title" content="Keystone Support Co. — Business support &amp; development">
-<meta property="og:description" content="Support and development for solo founders and creatives — one partner instead of three.">
+<meta property="og:description" content="Support and development for solo founders and creatives, from one partner.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://keystonesupport.github.io/">
 <meta property="og:image" content="https://keystonesupport.github.io/apple-touch-icon.png">
@@ -86,7 +86,7 @@ header.nav.scrolled{background:rgba(8,19,30,.72);backdrop-filter:blur(14px) satu
 @keyframes float{50%{margin-top:-40px;margin-left:30px}}
 .gridbg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 70% 60% at 70% 40%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 70% 40%,#000 20%,transparent 75%);opacity:.5}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;width:100%}
-.hero h1{font-size:clamp(42px,5.3vw,78px);font-weight:900;letter-spacing:-.035em;line-height:.96;margin:22px 0 26px}
+.hero h1{font-size:clamp(40px,4.9vw,72px);font-weight:900;letter-spacing:-.035em;line-height:.96;margin:22px 0 26px}
 .hero h1 .serif{font-size:1.08em;letter-spacing:-.02em}
 .word{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
 .word>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
@@ -178,6 +178,35 @@ section{position:relative}
 .plan.p4c .price small{font-size:13.5px}
 .terms{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-top:22px;color:var(--dim);font-size:13.5px}
 .terms span::before{content:"";display:inline-block;width:6px;height:6px;margin-right:9px;background:var(--gold);transform:rotate(45deg);vertical-align:2px}
+.report{border-radius:24px;border:1px solid var(--line2);background:linear-gradient(160deg,rgba(19,42,68,.85),rgba(10,22,34,.9));padding:30px;box-shadow:0 40px 100px -40px rgba(0,0,0,.85)}
+.rp-head{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid var(--line2);margin-bottom:8px}
+.rp-head b{display:block;font:700 18px Archivo;margin-top:6px}
+.rp-k{font:700 11.5px Manrope;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.rp-tag{padding:5px 11px;border-radius:999px;border:1px dashed var(--line2);font-size:12px;font-weight:700;color:var(--muted)}
+.rp-row{display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.rp-row b{font:700 15px Archivo;display:block}
+.rp-row small{color:var(--dim);font-size:13px}
+.rp-row em{font:800 17px Archivo;font-style:normal;color:var(--text);white-space:nowrap}
+.rp-side{font:700 10.5px Manrope;letter-spacing:.12em;text-transform:uppercase;padding:5px 8px;border-radius:6px;text-align:center}
+.rp-side.s{background:rgba(127,178,214,.12);color:var(--sky2)}
+.rp-side.d{background:rgba(201,151,63,.14);color:var(--gold2)}
+.rp-foot{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;margin-top:20px;font-size:14px;color:var(--muted)}
+.rp-foot b{color:var(--text);font-family:Archivo}
+.rp-bar{height:8px;border-radius:8px;background:rgba(160,190,215,.16);overflow:hidden}
+.rp-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));transform-origin:0;transform:scaleX(0);transition:transform 1.4s var(--ease) .4s}
+.report.in .rp-bar i{transform:none}
+.rp-note{font-size:12.5px;color:var(--dim);margin-top:18px}
+.case{align-items:start}
+.case .ba{margin-top:6px}
+.privacy{margin-top:40px;border-top:1px solid var(--line);padding-top:22px}
+.privacy summary{cursor:pointer;font-weight:700;color:var(--text);list-style:none;display:inline-flex;align-items:center;gap:8px}
+.privacy summary::-webkit-details-marker{display:none}
+.privacy summary::after{content:"+";color:var(--gold2);font-size:18px}
+.privacy[open] summary::after{content:"–"}
+.privacy p{max-width:760px;margin-top:12px;font-size:13.5px;color:var(--muted)}
+.consent{font-size:12.5px;color:var(--dim);margin-top:12px}
+.consent a{text-decoration:underline}
+@media (max-width:760px){.rp-row{grid-template-columns:1fr auto}.rp-side{grid-column:1/-1;justify-self:start}.report{padding:22px 18px}}
 /* who */
 .who{display:grid;grid-template-columns:320px 1fr;gap:50px;align-items:start}
 .tabs{display:grid;gap:10px}
@@ -416,9 +445,8 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
     </a>
     <nav class="links" id="links">
       <a href="#services">Services</a>
-      <a href="#savings">Savings</a>
+      <a href="#work">Proof</a>
       <a href="#plans">Plans</a>
-      <a href="#work">Work</a>
       <a href="#contact" class="btn gold sm magnet">Get a free review</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -434,22 +462,29 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
   </div>
   <div class="wrap">
     <div>
-      <span class="eyebrow fade-up" style="transition-delay:.1s">Business support &amp; development · Est. 2024</span>
-      <h1 aria-label="Your business, supported and developed.">
-        <span class="word"><span style="transition-delay:.15s">Your</span></span>
-        <span class="word"><span style="transition-delay:.25s">business,</span></span><br>
-        <span class="word"><span class="serif grad" style="transition-delay:.4s">supported</span></span><br>
-        <span class="word"><span class="serif grad" style="transition-delay:.5s">&amp; developed.</span></span>
+      <span class="eyebrow fade-up" style="transition-delay:.1s">For solo founders &amp; creatives · Est. 2024</span>
+      <h1 aria-label="The right hand solo founders and creatives don’t have.">
+        <span class="word"><span style="transition-delay:0.15s">The</span></span>
+        <span class="word"><span style="transition-delay:0.21s">right</span></span>
+        <span class="word"><span style="transition-delay:0.27s">hand</span></span>
+        <br>
+        <span class="word"><span class="serif grad" style="transition-delay:0.33s">solo</span></span>
+        <span class="word"><span class="serif grad" style="transition-delay:0.39s">founders</span></span>
+        <span class="word"><span class="serif grad" style="transition-delay:0.45s">and</span></span>
+        <span class="word"><span class="serif grad" style="transition-delay:0.51s">creatives</span></span>
+        <br>
+        <span class="word"><span style="transition-delay:0.57s">don’t</span></span>
+        <span class="word"><span style="transition-delay:0.63s">have.</span></span>
       </h1>
-      <p class="lead fade-up" style="transition-delay:.6s">One partner who keeps your business running and helps it grow — the admin, the website, the promotion, the savings and the next opportunity. Built for solo founders and creatives, for less than hiring three separate companies.</p>
+      <p class="lead fade-up" style="transition-delay:.6s">Keystone keeps your business running and helps it grow — the admin, the website, the savings, the promotion and the next opportunity — handled by one partner instead of three.</p>
       <div class="hero-ctas fade-up" style="transition-delay:.75s">
-        <a href="#contact" class="btn gold magnet">Get a free cost review <span class="arr">→</span></a>
-        <a href="#savings" class="btn ghost magnet">See what you'd save</a>
+        <a href="#contact" class="btn gold magnet">Get a free review <span class="arr">→</span></a>
+        <a href="#work" class="btn ghost magnet">See the proof</a>
       </div>
       <div class="trust fade-up" style="transition-delay:.9s">
-        <div><b>2-in-1</b>support &amp; development</div>
+        <div><b>377</b>spam pages removed for a client</div>
+        <div><b>$850</b>vs $3,000+ specialist quote</div>
         <div><b>1 day</b>reply time</div>
-        <div><b>$0</b>first review</div>
       </div>
     </div>
     <div class="arch-stage" id="archStage" aria-hidden="true">
@@ -470,9 +505,9 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
           <path class="stone key" d="M77.76 25.65 A80 80 0 0 1 122.24 25.65 L112.34 56.11 A48 48 0 0 0 87.66 56.11Z"/>
         </svg>
         <div class="tag t2"><i></i><span>Promotion</span></div>
-        <div class="tag t1"><i></i><span>Admin &amp; operations</span></div>
+        <div class="tag t1"><i></i><span>Operations &amp; savings</span></div>
         <div class="tag t3"><i></i><span>Opportunities</span></div>
-        <div class="tag t4"><i></i><span>Website &amp; savings</span></div>
+        <div class="tag t4"><i></i><span>Website care</span></div>
         <div class="tag k t5"><i></i><span>Keystone holds it together</span></div>
       </div>
     </div>
@@ -500,14 +535,13 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
       <div><span class="eyebrow" data-reveal>Services</span><h2 data-reveal style="--d:1">Support keeps it running. <span class="serif grad">Development helps it grow.</span></h2></div>
       <p class="lead" data-reveal style="--d:2">Buy either side or both. Each covers something solo owners usually pay a separate company for, or lose evenings doing themselves.</p>
     </div>
-    <div class="side-head" data-reveal><span>Support</span><i></i><small>Keep the business running</small></div>
-    <div class="services s3">
+    <div class="services">
       <article class="card spot" data-reveal style="--d:0">
         <span class="num">01</span>
         <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
-        <h3>Admin &amp; operations</h3>
-        <span class="for">Support</span><p>The paperwork and follow-ups that eat your week.</p>
-        <ul><li>Email, scheduling and follow-ups</li><li>Bills, renewals and deadlines tracked</li><li>Documents and letters drafted</li><li>Personal assistant add-on for owners</li></ul>
+        <h3>Operations &amp; savings</h3>
+        <span class="for">Support</span><p>The admin that eats your week, and the costs that leak.</p>
+        <ul><li>Email, scheduling and follow-ups</li><li>Bills, renewals and deadlines tracked</li><li>Documents and letters drafted</li><li>Subscription and service-plan audits</li><li>Personal assistant add-on</li></ul>
       </article>
       <article class="card spot" data-reveal style="--d:1">
         <span class="num">02</span>
@@ -518,96 +552,18 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
       </article>
       <article class="card spot" data-reveal style="--d:2">
         <span class="num">03</span>
-        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.5-.8-1.5-1.2-2.8-1.2-1.7 0-2.8.8-2.8 2s1.1 1.6 2.8 2 2.8.8 2.8 2-1.1 2-2.8 2c-1.3 0-2.3-.4-2.8-1.2M12 6v2M12 16v2"/></svg></div>
-        <h3>Cost savings</h3>
-        <span class="for">Support</span><p>Stop paying for what you don't use.</p>
-        <ul><li>Software, hosting and domains</li><li>Subscriptions and memberships</li><li>Phone, internet and service plans</li><li>A clear keep, cancel or switch list</li></ul>
-      </article>
-    </div>
-    <div class="side-head" data-reveal style="margin-top:44px"><span>Development</span><i></i><small>Help the business grow</small></div>
-    <div class="services">
-      <article class="card spot" data-reveal style="--d:0">
-        <span class="num">04</span>
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></div>
-        <h3>Brand &amp; presence</h3>
-        <span class="for">Development</span><p>Look established before the first call.</p>
-        <ul><li>New websites and redesigns</li><li>Professional bio and press kit</li><li>Google Business listing</li><li>Portfolio and case pages</li></ul>
-      </article>
-      <article class="card spot" data-reveal style="--d:1">
-        <span class="num">05</span>
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></div>
-        <h3>Promotion</h3>
-        <span class="for">Development</span><p>Stay visible without living on social media.</p>
-        <ul><li>Monthly social media plan and captions</li><li>Launch plans for releases and events</li><li>Announcements and newsletters</li><li>Promotional images</li></ul>
-      </article>
-      <article class="card spot" data-reveal style="--d:2">
-        <span class="num">06</span>
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 12l3 3 5-6"/><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></div>
-        <h3>Opportunities</h3>
-        <span class="for">Development</span><p>Find the next partner, deal or income stream.</p>
-        <ul><li>Partners, sponsors and collaborations</li><li>Pitch emails and proposals</li><li>Outreach and follow-up tracking</li><li>New customer groups</li></ul>
+        <h3>Brand &amp; promotion</h3>
+        <span class="for">Development</span><p>Look established and stay visible.</p>
+        <ul><li>New websites and redesigns</li><li>Professional bio and press kit</li><li>Social media plans and captions</li><li>Launches and announcements</li><li>Google Business listing</li></ul>
       </article>
       <article class="card spot" data-reveal style="--d:3">
-        <span class="num">07</span>
+        <span class="num">04</span>
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"/><path d="M8 15l4-4 3 3 5-6"/></svg></div>
-        <h3>Growth planning</h3>
-        <span class="for">Development</span><p>Know what to do next, and why.</p>
-        <ul><li>Quarterly business review</li><li>90-day plan of top moves</li><li>Pricing and offer review</li><li>Monthly results report</li></ul>
+        <h3>Opportunities &amp; growth</h3>
+        <span class="for">Development</span><p>Find the next partner, client or income stream.</p>
+        <ul><li>Partner and sponsor outreach</li><li>Pitch emails and proposals</li><li>Follow-up tracking</li><li>Quarterly review and 90-day plan</li></ul>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- WHO -->
-<section class="band" style="padding-top:20px">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><span class="eyebrow" data-reveal>Who we help</span><h2 data-reveal style="--d:1">What we take <span class="serif grad">off your plate.</span></h2></div>
-    </div>
-    <div class="who" data-reveal>
-      <div class="tabs" role="tablist">
-        <button class="tab on" role="tab" aria-selected="true" data-tab="0"><b>Solo founders</b><small>Consultants, coaches, independents</small></button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="1"><b>Small businesses</b><small>Shops, studios, service providers</small></button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="2"><b>Creators &amp; brands</b><small>Artists, labels, independent makers</small></button>
-      </div>
-      <div class="panel-wrap">
-        <div class="panel on" role="tabpanel">
-          <h3>You do the work. We handle the rest.</h3>
-          <p>A typical month for a one-person business.</p>
-          <div class="tasks">
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Bills, renewals and deadlines on one calendar</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Appointments and repairs booked</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Proposals and pitch emails drafted</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Partners and new clients researched</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Documents organized and easy to find</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Professional bio and online profile polished</div>
-          </div>
-        </div>
-        <div class="panel" role="tabpanel">
-          <h3>Run the business, not the back office.</h3>
-          <p>A typical month of support for a small business.</p>
-          <div class="tasks">
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Monthly social posts planned and written</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Google listing and reviews kept current</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Website updated, backed up and secure</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Vendor renewals tracked before they bill</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Software and service plans audited for savings</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Customer emails and letters drafted</div>
-          </div>
-        </div>
-        <div class="panel" role="tabpanel">
-          <h3>Look as good as your work.</h3>
-          <p>Support for people who create and launch things.</p>
-          <div class="tasks">
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Press kit and bio ready to send</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Release and launch plans with captions</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Outreach emails to press and partners</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Website that shows your work and stays safe</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Promotional images and announcements</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Tools and subscriptions trimmed to what you use</div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -623,38 +579,6 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
       <div class="step" data-reveal style="--d:0"><div class="dot">1</div><h3>Free review</h3><p>We look at what you pay for and what eats your time, and show you where you can save.</p></div>
       <div class="step" data-reveal style="--d:1"><div class="dot">2</div><h3>A clear plan</h3><p>A fixed price per project or one simple monthly plan. No hidden fees, cancel anytime.</p></div>
       <div class="step" data-reveal style="--d:2"><div class="dot">3</div><h3>We handle it</h3><p>We do the work and send a short update, so you always know what was done.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CALCULATOR -->
-<section class="band" id="savings">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><span class="eyebrow" data-reveal>Savings calculator</span><h2 data-reveal style="--d:1">See what one partner <span class="serif grad">could save you.</span></h2></div>
-      <p class="lead" data-reveal style="--d:2">Move the sliders to match what you pay separate people or services today. We match you to a plan and show the difference.</p>
-    </div>
-    <div class="calc" data-reveal>
-      <div class="calc-in">
-        <h3>What you pay today</h3>
-        <p>Monthly amounts. Starting values are typical market prices — set your own.</p>
-        <div class="slider-row"><label for="s1"><div>Assistant or admin help<span>Bills, bookings, documents, errands</span></div><output id="o1">$0</output></label><input type="range" id="s1" min="0" max="3000" step="25" value="800"></div>
-        <div class="slider-row"><label for="s2"><div>Marketing and social media<span>Posts, captions, promotion, listings</span></div><output id="o2">$0</output></label><input type="range" id="s2" min="0" max="3000" step="25" value="750"></div>
-        <div class="slider-row"><label for="s3"><div>Website upkeep and fixes<span>Maintenance, updates, security</span></div><output id="o3">$0</output></label><input type="range" id="s3" min="0" max="500" step="1" value="89"></div>
-        <div class="slider-row" style="margin-bottom:0"><label for="s4"><div>Subscriptions you rarely use<span>Software, memberships, extra plans</span></div><output id="o4">$0</output></label><input type="range" id="s4" min="0" max="300" step="5" value="40"></div>
-      </div>
-      <div class="calc-out" aria-live="polite">
-        <span class="lbl">Estimated yearly savings</span>
-        <div class="big grad" id="yearly">$0</div>
-        <div class="per" id="monthly">$0 a month</div>
-        <div class="calc-rows">
-          <div><span>You pay today</span><b id="today">$0</b></div>
-          <div><span>Recommended plan</span><b id="planName">—</b></div>
-          <div><span>Plan price</span><b id="planPrice">$0</b></div>
-        </div>
-        <a href="#contact" class="btn gold magnet" id="calcCta" style="align-self:flex-start">Lock in these savings <span class="arr">→</span></a>
-        <p class="fine">An estimate from the amounts you enter, not a quote. Starting values: a part-time United States assistant (about 20 hours at $40), social media management from $750, website care from $89. Plans include set hours; the free review checks the right fit. Unused subscriptions are counted as savings found in the free cost review.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -713,44 +637,48 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
 <!-- CASE -->
 <section class="band" id="work" style="background:linear-gradient(180deg,transparent,var(--bg2) 25%,var(--bg2) 75%,transparent)">
   <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow" data-reveal>Proof</span><h2 data-reveal style="--d:1">Proof, <span class="serif grad">not promises.</span></h2></div>
+      <p class="lead" data-reveal style="--d:2">Real results from client work, and the report every client gets each month, so you always see what was done.</p>
+    </div>
     <div class="case">
-      <div>
-        <span class="eyebrow" data-reveal>Case study</span>
-        <h2 data-reveal style="--d:1;margin-top:18px;font-size:clamp(32px,4.2vw,50px)">Rescuing a hacked <span class="serif grad">music label.</span></h2>
-        <p class="lead" data-reveal style="--d:2;margin-top:18px">An independent label's website had been taken over by spammers — hundreds of gambling pages showing in Google under their name. We cleaned it, secured it and set it up to stay that way.</p>
-        <div class="stats" data-reveal style="--d:3">
+      <div data-reveal>
+        <span class="pill">Client result · Website rescue</span>
+        <h3 style="font-size:28px;margin:18px 0 10px">A business website taken over by spam.</h3>
+        <p class="lead" style="font-size:16px">Hundreds of gambling pages were showing in Google under the client's name. We cleaned it, secured it and set it up to stay that way.</p>
+        <div class="stats">
           <div class="stat"><b data-count="377">0</b><span>spam pages removed</span></div>
-          <div class="stat"><b data-count="0">0</b><span>security warnings left</span></div>
+          <div class="stat"><b>None</b><span>security warnings left</span></div>
           <div class="stat"><b data-count="850" data-prefix="$">$0</b><span>vs $3,000+ from specialists</span></div>
         </div>
-        <ul data-reveal style="--d:4">
-          <li>Removed all spam and closed the security gaps</li>
-          <li>Installed a firewall, login protection and automatic backups</li>
-          <li>Set up Google Search Console and requested removal of spam results</li>
-          <li>Added a contact form, a new footer and faster pages</li>
-        </ul>
-      </div>
-      <div data-reveal style="--d:2">
         <div class="ba" id="ba">
           <div class="shot before">
-            <div class="sb">independent music label</div>
-            <div class="res"><div class="u">label-site.com</div><div class="t">Independent Music Label — Official Site</div><div class="d">Artists, releases and news from the label.</div></div>
-            <div class="res spam"><div class="u">label-site.com › casino-bonus</div><div class="t"><span class="warn">SPAM</span>Best Online Casino Bonus 2026 — Free Spins</div><div class="d">Claim free spins now. Top rated slots and betting…</div></div>
-            <div class="res spam"><div class="u">label-site.com › slots-review</div><div class="t"><span class="warn">SPAM</span>Real Money Slots — Win Big Tonight</div><div class="d">Play real money slots online. Instant payout…</div></div>
-            <div class="res spam"><div class="u">label-site.com › betting-tips</div><div class="t"><span class="warn">SPAM</span>Sports Betting Tips &amp; Odds</div><div class="d">Expert betting predictions updated daily…</div></div>
+            <div class="sb">your business name</div>
+            <div class="res"><div class="u">yourbusiness.com</div><div class="t">Your Business — Official Site</div><div class="d">Services, about and contact.</div></div>
+            <div class="res spam"><div class="u">yourbusiness.com › casino-bonus</div><div class="t"><span class="warn">SPAM</span>Best Online Casino Bonus — Free Spins</div><div class="d">Claim free spins now. Top rated slots and betting…</div></div>
+            <div class="res spam"><div class="u">yourbusiness.com › slots-review</div><div class="t"><span class="warn">SPAM</span>Real Money Slots — Win Big Tonight</div><div class="d">Play real money slots online. Instant payout…</div></div>
           </div>
           <div class="shot after">
-            <div class="sb">independent music label</div>
-            <div class="res"><div class="u">label-site.com</div><div class="t">Independent Music Label — Official Site</div><div class="d">Artists, releases and news from the label.</div></div>
-            <div class="res"><div class="u">label-site.com › artists</div><div class="t">Artists — Independent Music Label</div><div class="d">Meet the artists on the roster.</div></div>
-            <div class="res"><div class="u">label-site.com › releases</div><div class="t">Releases — Independent Music Label</div><div class="d">New and upcoming releases.</div></div>
-            <div class="res"><div class="u">label-site.com › contact</div><div class="t">Contact — Independent Music Label</div><div class="d">Booking, press and general enquiries.</div></div>
+            <div class="sb">your business name</div>
+            <div class="res"><div class="u">yourbusiness.com</div><div class="t">Your Business — Official Site</div><div class="d">Services, about and contact.</div></div>
+            <div class="res"><div class="u">yourbusiness.com › services</div><div class="t">Services — Your Business</div><div class="d">What we offer and how to book.</div></div>
+            <div class="res"><div class="u">yourbusiness.com › contact</div><div class="t">Contact — Your Business</div><div class="d">Get in touch.</div></div>
           </div>
           <span class="lab l">Before</span><span class="lab r">After</span>
           <div class="handle"></div>
           <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
         </div>
-        <p class="ba-cap">Drag to compare. Illustration of the search results; names and pages are anonymized.</p>
+        <p class="ba-cap">Drag to compare. Illustration of the search results; client details removed.</p>
+      </div>
+      <div class="report" data-reveal style="--d:2">
+        <div class="rp-head"><div><span class="rp-k">Monthly report</span><b>Sample client · Support &amp; Development</b></div><span class="rp-tag">Sample</span></div>
+        <div class="rp-row"><span class="rp-side s">Support</span><div><b>Operations</b><small>Tasks completed, renewals caught, follow-ups sent</small></div><em>23 tasks</em></div>
+        <div class="rp-row"><span class="rp-side s">Support</span><div><b>Website</b><small>Updates, backups, security scans, uptime</small></div><em>All clear</em></div>
+        <div class="rp-row"><span class="rp-side s">Support</span><div><b>Savings</b><small>Unused subscriptions and plans found</small></div><em>$64 / month</em></div>
+        <div class="rp-row"><span class="rp-side d">Development</span><div><b>Promotion</b><small>Posts planned and published, listing updates</small></div><em>12 posts</em></div>
+        <div class="rp-row"><span class="rp-side d">Development</span><div><b>Opportunities</b><small>Pitches sent, replies, meetings booked</small></div><em>8 · 3 · 1</em></div>
+        <div class="rp-foot"><span>Hours used</span><div class="rp-bar"><i style="width:80%"></i></div><b>12 of 15</b></div>
+        <p class="rp-note">Example figures showing the format. Every client gets this report each month, with real numbers for their business.</p>
       </div>
     </div>
   </div>
@@ -809,6 +737,7 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
           <p>Thank you — we'll reply within one business day.</p>
         </div>
       </div>
+      <p class="consent">By sending, you agree to our <a href="#privacy">privacy note</a>.</p>
       <div class="err" id="ferr" role="alert"></div>
       <div class="fnav" id="fnav">
         <button type="button" class="btn ghost sm" id="fback" style="visibility:hidden">← Back</button>
@@ -826,9 +755,13 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
         <a href="#top" class="brand"><svg viewBox="14 18 172 160" aria-hidden="true"><path fill="#e8eef4" d="M20 107.7H52V174.5H20Z"/><path fill="#e8eef4" d="M148 107.7H180V174.5H148Z"/><path fill="#e8eef4" d="M20.00 102.50 A80 80 0 0 1 33.78 57.61 L59.70 76.43 A48 48 0 0 0 52.00 102.50Z"/><path fill="#e8eef4" d="M36.84 53.40 A80 80 0 0 1 72.82 27.26 L82.72 57.72 A48 48 0 0 0 62.75 72.22Z"/><path fill="#e8eef4" d="M127.18 27.26 A80 80 0 0 1 163.16 53.40 L137.25 72.22 A48 48 0 0 0 117.28 57.72Z"/><path fill="#e8eef4" d="M166.22 57.61 A80 80 0 0 1 180.00 102.50 L148.00 102.50 A48 48 0 0 0 140.30 76.43Z"/><path fill="#c9973f" d="M77.76 25.65 A80 80 0 0 1 122.24 25.65 L112.34 56.11 A48 48 0 0 0 87.66 56.11Z"/></svg><span>Keystone Support Co.<small>Est. 2024</small></span></a>
         <p>Support and development for solo founders and creatives — one partner that keeps the business running and helps it grow.</p>
       </div>
-      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#savings">Savings calculator</a></li><li><a href="#plans">Plans</a></li><li><a href="#work">Case study</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="mailto:keystonesupportco@gmail.com">keystonesupportco@gmail.com</a></li><li><a href="#contact">Free cost review</a></li><li>Remote · clients anywhere</li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#work">Proof</a></li><li><a href="#plans">Plans</a></li><li><a href="#privacy">Privacy note</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:keystonesupportco@gmail.com">keystonesupportco@gmail.com</a></li><li><a href="#contact">Free review</a></li><li>Remote · clients anywhere</li></ul></div>
     </div>
+    <details class="privacy" id="privacy">
+      <summary>Privacy note</summary>
+      <p>We use the details you send through this site only to reply to you and prepare your quote. Form messages are delivered to our email by FormSubmit. We don't sell or share your information, and this site uses no tracking or advertising cookies. For clients, any account access is handled through a password manager and removed when the work ends. To see or delete what we hold about you, email keystonesupportco@gmail.com.</p>
+    </details>
     <div class="bigword" aria-hidden="true">KEYSTONE</div>
     <div class="legal"><span>© 2026 Keystone Support Co. All rights reserved.</span><span>Designed and built in-house by Keystone Support Co.</span></div>
   </div>
@@ -876,34 +809,11 @@ function ideaLight(){const r=idea.getBoundingClientRect();const p=Math.min(1,Mat
 const steps=$('#steps'),stepEls=$$('.step');
 function stepsLine(){const r=steps.getBoundingClientRect();const p=Math.min(1,Math.max(0,(innerHeight*.75-r.top)/(r.height*.9)));steps.style.setProperty('--sp',p.toFixed(3));stepEls.forEach((s,i)=>s.classList.toggle('lit',p>=i/2-.02))}
 
-// tabs auto-rotate
-const tabs=$$('.tab'),panels=$$('.panel');let cur=0,t0=performance.now(),paused=false;const DUR=7000;
-function show(i){cur=i;tabs.forEach((t,j)=>{t.classList.toggle('on',j===i);t.setAttribute('aria-selected',j===i);t.style.setProperty('--p','0%')});panels.forEach((p,j)=>p.classList.toggle('on',j===i));t0=performance.now()}
-tabs.forEach((t,i)=>t.addEventListener('click',()=>{show(i);paused=true;tabs[i].style.setProperty('--p','100%')}));
-const whoEl=$('.who');let whoVisible=false;new IntersectionObserver(e=>whoVisible=e[0].isIntersecting,{threshold:.3}).observe(whoEl);
-(function tick(now){if(!paused&&whoVisible&&!reduce){const p=(now-t0)/DUR;tabs[cur].style.setProperty('--p',Math.min(100,p*100)+'%');if(p>=1)show((cur+1)%tabs.length)}else if(!whoVisible)t0=now-((parseFloat(tabs[cur].style.getPropertyValue('--p'))||0)/100)*DUR;requestAnimationFrame(tick)})(performance.now());
-
 // counters
 const fmt=n=>'$'+Math.round(n).toLocaleString('en-US');
 function countUp(el,to,pre='',dur=1400){if(reduce){el.textContent=pre+to.toLocaleString('en-US');return}const s=performance.now();(function f(n){const p=Math.min(1,(n-s)/dur),e=1-Math.pow(1-p,3);el.textContent=pre+Math.round(to*e).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)})(s)}
 const cio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target;countUp(el,+el.dataset.count,el.dataset.prefix||'');cio.unobserve(el)}}),{threshold:.6});
 $$('[data-count]').forEach(el=>cio.observe(el));
-
-// calculator
-const S=[1,2,3,4].map(i=>$('#s'+i)),O=[1,2,3,4].map(i=>$('#o'+i));
-const shown={yearly:0,monthly:0,today:0};
-function tween(key,el,to,f){const from=shown[key];shown[key]=to;if(reduce){el.textContent=f(to);return}const s=performance.now();(function g(n){const p=Math.min(1,(n-s)/500),e=1-Math.pow(1-p,3);el.textContent=f(from+(to-from)*e);if(p<1)requestAnimationFrame(g)})(s)}
-function calc(){
-  const v=S.map(s=>+s.value);
-  S.forEach((s,i)=>{s.style.setProperty('--fill',(v[i]-s.min)/(s.max-s.min)*100+'%');O[i].textContent=fmt(v[i])});
-  const [asst,mkt,web,subs]=v;const today=asst+mkt+web+subs;
-  let plan=null;if(mkt>0&&(asst>0||web>0))plan=['Support & Development',1200];else if(mkt>0)plan=['Development',650];else if(asst>0)plan=['Support',350];else if(web>0)plan=['Website Care',59];
-  const price=plan?plan[1]:0;const save=Math.max(0,today-price);
-  $('#planName').textContent=plan?plan[0]:'Free cost review';$('#planPrice').textContent=fmt(price);
-  tween('today',$('#today'),today,fmt);tween('yearly',$('#yearly'),save*12,fmt);tween('monthly',$('#monthly'),save,n=>fmt(n)+' a month');
-  $('#calcCta').dataset.plan=plan?plan[0]:'';
-}
-S.forEach(s=>s.addEventListener('input',calc));calc();
 
 // before/after
 const ba=$('#ba'),bar=ba.querySelector('input');
@@ -935,12 +845,13 @@ next.addEventListener('click',async()=>{
     name:$('#fname').value.trim(),email:$('#femail').value.trim(),business:$('#fbiz').value.trim(),
     needs:$$('#needChips input:checked').map(i=>i.value).join(', '),client_type:$('#ftype').value,timeline:$('#ftime').value,plan:$('#fplan').value,message:$('#fmsg').value.trim()};
   next.disabled=true;next.innerHTML='Sending…';
-  try{const r=await fetch('https://formsubmit.co/ajax/keystonesupportco@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)});
+  try{const r=await fetch('https://formsubmit.co/ajax/6371f4f49735ecd6853a9b33088a6730',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)});
     if(!r.ok)throw 0;go(3)}
   catch{err.innerHTML='Something went wrong. Please email <a href="mailto:keystonesupportco@gmail.com" style="text-decoration:underline">keystonesupportco@gmail.com</a> directly.';next.disabled=false;next.innerHTML='Send request <span class="arr">→</span>'}
 });
 form.addEventListener('submit',e=>e.preventDefault());
 
+const pv=$('#privacy');const openPv=()=>{if(location.hash==='#privacy'&&pv)pv.open=true};addEventListener('hashchange',openPv);openPv();
 onScroll();
 })();
 </script>
