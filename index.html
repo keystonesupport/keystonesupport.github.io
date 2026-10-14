@@ -311,6 +311,7 @@ input[type=range]:focus-visible{box-shadow:0 0 0 3px rgba(233,194,122,.35)}
 .prow:hover{background:rgba(127,178,214,.05)}
 .prow b{font:800 18px Archivo;color:var(--gold2)}
 .prow span:last-child{color:var(--dim);font-size:14px}
+.prow.pr2{grid-template-columns:1fr auto}
 .prow.hd{font:700 12px Manrope;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);padding-top:14px;padding-bottom:14px}
 .prow.hd:hover{background:none}
 
@@ -607,48 +608,39 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
   <div class="wrap">
     <div class="sec-head">
       <div><span class="eyebrow" data-reveal>Plans</span><h2 data-reveal style="--d:1">Simple monthly plans.</h2></div>
-      <p class="lead" data-reveal style="--d:2">Pick one side or both. Comparisons are published market prices.</p>
+      <p class="lead" data-reveal style="--d:2">Pick one side or both. Every plan is priced after a free review, so you only pay for what your business needs.</p>
     </div>
     <div class="plans p4">
       <div class="plan p4c" data-reveal style="--d:0">
         <h3>Website Care</h3><div class="who-for">Keep your site safe and current</div>
-        <div class="price">$59<small> / month</small></div>
         <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Updates and security monitoring</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Automatic backups</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Short monthly report</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 1 hour of edits</li></ul>
-        <div class="compare">Website care companies charge from $89 a month.</div>
-        <a href="#contact" class="btn ghost" data-plan="Website Care">Choose Website Care</a>
+        <a href="#contact" class="btn ghost" data-plan="Website Care">Get a quote</a>
       </div>
       <div class="plan p4c" data-reveal style="--d:1">
         <h3>Support</h3><div class="who-for">Keep the business running</div>
-        <div class="price">$350<small> / month</small></div>
         <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Website Care</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Admin, email and scheduling</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Renewals and deadlines tracked</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Savings checks</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 5 hours a month</li></ul>
-        <div class="compare">Assistant hours alone don't include website care or savings reviews.</div>
-        <a href="#contact" class="btn ghost" data-plan="Support">Choose Support</a>
+        <a href="#contact" class="btn ghost" data-plan="Support">Get a quote</a>
       </div>
       <div class="plan p4c" data-reveal style="--d:2">
         <h3>Development</h3><div class="who-for">Help the business grow</div>
-        <div class="price">$650<small> / month</small></div>
         <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Monthly promotion plan and captions</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Google listing kept current</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Opportunity and partner outreach</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Monthly results report</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 8 hours a month</li></ul>
-        <div class="compare">Freelance social media management alone starts around $750 a month.</div>
-        <a href="#contact" class="btn ghost" data-plan="Development">Choose Development</a>
+        <a href="#contact" class="btn ghost" data-plan="Development">Get a quote</a>
       </div>
       <div class="plan p4c pop" data-reveal style="--d:3"><span class="badge">Most complete</span>
         <h3>Support &amp; Development</h3><div class="who-for">Both sides, one partner</div>
-        <div class="price">$1,200<small> / month</small></div>
         <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Support and Development</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Priority replies</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Quarterly growth review and 90-day plan</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 15 hours a month</li></ul>
-        <div class="compare">Online business managers charge about $2,499 a month; full-time executive assistants about $3,000.</div>
-        <a href="#contact" class="btn gold" data-plan="Support &amp; Development">Choose Support &amp; Development</a>
+        <a href="#contact" class="btn gold" data-plan="Support &amp; Development">Get a quote</a>
       </div>
     </div>
-    <div class="terms" data-reveal><span>3-month minimum, then month to month</span><span>Extra hours $75, agreed in advance</span><span>Personal assistant hours available as an add-on</span></div>
+    <div class="terms" data-reveal><span>3-month minimum, then month to month</span><span>Fixed monthly price, quoted up front</span><span>Personal assistant hours available as an add-on</span></div>
     <div class="projects" data-reveal>
-      <div class="ph"><h3>One-time projects</h3><span class="pill">Fixed price, agreed up front</span></div>
-      <div class="prow hd"><span>Project</span><span>Starting at</span><span>Typical market price</span></div>
-      <div class="prow"><span>Free review of costs, presence and opportunities</span><b>Free</b><span>—</span></div>
-      <div class="prow"><span>Opportunity and cost audit with a 90-day plan</span><b>$350</b><span>Quoted per project</span></div>
-      <div class="prow"><span>Press kit or professional bio</span><b>$350</b><span>Quoted per project</span></div>
-      <div class="prow"><span>Launch package (plan, captions, announcement, outreach emails)</span><b>$450</b><span>Quoted per project</span></div>
-      <div class="prow"><span>Website rescue and security setup</span><b>$850</b><span>$3,000 and up from specialist companies</span></div>
-      <div class="prow"><span>New website or full redesign</span><b>$1,500</b><span>Quoted per project</span></div>
+      <div class="ph"><h3>One-time projects</h3><span class="pill">Fixed price, quoted up front</span></div>
+      <div class="prow pr2"><span>Free review of costs, presence and opportunities</span><b>Free</b></div>
+      <div class="prow pr2"><span>Opportunity and cost audit with a 90-day plan</span><b>Quote</b></div>
+      <div class="prow pr2"><span>Press kit or professional bio</span><b>Quote</b></div>
+      <div class="prow pr2"><span>Launch package: plan, captions, announcement, outreach emails</span><b>Quote</b></div>
+      <div class="prow pr2"><span>Website rescue and security setup</span><b>Quote</b></div>
+      <div class="prow pr2"><span>New website or full redesign</span><b>Quote</b></div>
     </div>
   </div>
 </section>
@@ -723,7 +715,7 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
         <article class="rcard more" data-side="s">
           <div class="rc-top"><span class="rp-side s">Support</span><span class="rc-area">Website rescue</span></div>
           <div class="rc-big"><b>377</b><span>spam pages removed</span></div>
-          <p>Removed a spam takeover, added a firewall, login protection and backups, for $850 against $3,000+ specialist quotes.</p>
+          <p>Removed a spam takeover, added a firewall, login protection and backups, at a fraction of typical specialist quotes.</p>
           
           <div class="rc-client">A small business</div>
         </article>
@@ -781,7 +773,7 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
           <div class="field"><label for="ftype">You are a…</label><select id="ftype" name="client_type"><option>Solo founder</option><option>Small business</option><option>Creator or label</option><option>Other</option></select></div>
           <div class="field"><label for="ftime">Timeline</label><select id="ftime" name="timeline"><option>As soon as possible</option><option>This month</option><option>In the next few months</option><option>Just exploring</option></select></div>
         </div>
-        <div class="field"><label for="fplan">Plan or budget</label><select id="fplan" name="plan"><option>Not sure yet</option><option>Website Care — $59/month</option><option>Support — $350/month</option><option>Development — $650/month</option><option>Support &amp; Development — $1,200/month</option><option>One-time project</option></select></div>
+        <div class="field"><label for="fplan">Plan you're interested in</label><select id="fplan" name="plan"><option>Not sure yet</option><option>Website Care</option><option>Support</option><option>Development</option><option>Support &amp; Development</option><option>One-time project</option></select></div>
         <div class="field"><label for="fmsg">What's going on? <span style="color:var(--dim);font-weight:500">(optional)</span></label><textarea id="fmsg" name="message" placeholder="A sentence or two about what you need help with"></textarea></div>
       </div>
       <div class="fstep" data-step="2">
@@ -886,7 +878,7 @@ moreBtn.addEventListener('click',()=>{showAll=true;applyR()});applyR();
 
 // plan buttons preselect
 const fplan=$('#fplan');
-$$('[data-plan]').forEach(b=>b.addEventListener('click',()=>{const p=b.dataset.plan;if(!p)return;[...fplan.options].forEach(o=>{if(o.text.startsWith(p+' —'))fplan.value=o.value})}));
+$$('[data-plan]').forEach(b=>b.addEventListener('click',()=>{const p=b.dataset.plan;if(!p)return;[...fplan.options].forEach(o=>{if(o.text===p)fplan.value=o.value})}));
 
 // multi-step form
 const form=$('#qform'),steps3=$$('.fstep'),bars=$$('.fprog i'),next=$('#fnext'),back=$('#fback'),err=$('#ferr');let step=0;
