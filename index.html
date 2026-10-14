@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Keystone Support Co. — Business &amp; personal support</title>
-<meta name="description" content="Keystone Support Co. is one trusted partner for your business and your life — admin, promotion, online presence and cost savings. Established 2024.">
-<meta property="og:title" content="Keystone Support Co. — Business &amp; personal support">
-<meta property="og:description" content="Admin, promotion, websites and savings from one trusted partner, at a lower cost than hiring each separately.">
+<title>Keystone Support Co. — Business support &amp; development</title>
+<meta name="description" content="Keystone Support Co. keeps your business running and helps it grow — admin, website care, cost savings, promotion and new opportunities from one partner. Established 2024.">
+<meta property="og:title" content="Keystone Support Co. — Business support &amp; development">
+<meta property="og:description" content="Support and development for solo founders and creatives — one partner instead of three.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://keystonesupport.github.io/">
 <meta property="og:image" content="https://keystonesupport.github.io/apple-touch-icon.png">
@@ -86,7 +86,7 @@ header.nav.scrolled{background:rgba(8,19,30,.72);backdrop-filter:blur(14px) satu
 @keyframes float{50%{margin-top:-40px;margin-left:30px}}
 .gridbg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 70% 60% at 70% 40%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 70% 40%,#000 20%,transparent 75%);opacity:.5}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;width:100%}
-.hero h1{font-size:clamp(48px,7.6vw,104px);font-weight:900;letter-spacing:-.035em;line-height:.96;margin:22px 0 26px}
+.hero h1{font-size:clamp(42px,5.3vw,78px);font-weight:900;letter-spacing:-.035em;line-height:.96;margin:22px 0 26px}
 .hero h1 .serif{font-size:1.08em;letter-spacing:-.02em}
 .word{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
 .word>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
@@ -167,6 +167,17 @@ section{position:relative}
 .card li::before{content:"";flex:none;width:6px;height:6px;margin-top:9px;background:var(--gold);transform:rotate(45deg)}
 .card .num{position:absolute;top:26px;right:24px;font:800 13px Archivo;color:var(--dim);letter-spacing:.05em}
 
+.side-head{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.side-head span{font:800 22px Archivo;letter-spacing:-.01em}
+.side-head i{flex:1;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+.side-head small{color:var(--dim);font-weight:600;font-size:14px}
+.services.s3{grid-template-columns:repeat(3,1fr)}
+.plans.p4{grid-template-columns:repeat(4,1fr);gap:16px}
+.plan.p4c{padding:32px 24px}
+.plan.p4c .price{font-size:44px;white-space:nowrap}
+.plan.p4c .price small{font-size:13.5px}
+.terms{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-top:22px;color:var(--dim);font-size:13.5px}
+.terms span::before{content:"";display:inline-block;width:6px;height:6px;margin-right:9px;background:var(--gold);transform:rotate(45deg);vertical-align:2px}
 /* who */
 .who{display:grid;grid-template-columns:320px 1fr;gap:50px;align-items:start}
 .tabs{display:grid;gap:10px}
@@ -346,7 +357,8 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
 
 /* responsive */
 @media (max-width:1040px){
-  .services{grid-template-columns:1fr 1fr}
+  .services,.services.s3{grid-template-columns:1fr 1fr}
+  .plans.p4{grid-template-columns:1fr 1fr;max-width:none}
   .hero .wrap{grid-template-columns:1fr}
   .arch-stage{max-width:420px;margin:10px auto 0}
   .who{grid-template-columns:1fr}
@@ -367,7 +379,8 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
   .menu-btn{display:block}
   .wrap{padding:0 16px}
   .band{padding:90px 0}
-  .services,.tasks,.chips,.two,.stats{grid-template-columns:1fr}
+  .services,.services.s3,.plans.p4,.tasks,.chips,.two,.stats{grid-template-columns:1fr}
+  .side-head small{display:none}
   .stats{grid-template-columns:repeat(3,1fr);gap:8px}
   .stat{padding:16px 12px}.stat b{font-size:28px}
   .tabs{grid-template-columns:1fr}
@@ -421,19 +434,20 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
   </div>
   <div class="wrap">
     <div>
-      <span class="eyebrow fade-up" style="transition-delay:.1s">Business &amp; personal support · Est. 2024</span>
-      <h1 aria-label="Business and life, handled.">
-        <span class="word"><span style="transition-delay:.15s">Business</span></span>
-        <span class="word"><span style="transition-delay:.25s">and life,</span></span><br>
-        <span class="word"><span class="serif grad" style="transition-delay:.4s">handled.</span></span>
+      <span class="eyebrow fade-up" style="transition-delay:.1s">Business support &amp; development · Est. 2024</span>
+      <h1 aria-label="Your business, supported and developed.">
+        <span class="word"><span style="transition-delay:.15s">Your</span></span>
+        <span class="word"><span style="transition-delay:.25s">business,</span></span><br>
+        <span class="word"><span class="serif grad" style="transition-delay:.4s">supported</span></span><br>
+        <span class="word"><span class="serif grad" style="transition-delay:.5s">&amp; developed.</span></span>
       </h1>
-      <p class="lead fade-up" style="transition-delay:.6s">One trusted partner for your business and your personal life — the admin, the promotion, the online presence and the bills — so you can focus on what only you can do. Less to manage, and less to pay than hiring each separately.</p>
+      <p class="lead fade-up" style="transition-delay:.6s">One partner who keeps your business running and helps it grow — the admin, the website, the promotion, the savings and the next opportunity. Built for solo founders and creatives, for less than hiring three separate companies.</p>
       <div class="hero-ctas fade-up" style="transition-delay:.75s">
         <a href="#contact" class="btn gold magnet">Get a free cost review <span class="arr">→</span></a>
         <a href="#savings" class="btn ghost magnet">See what you'd save</a>
       </div>
       <div class="trust fade-up" style="transition-delay:.9s">
-        <div><b>4-in-1</b>support areas</div>
+        <div><b>2-in-1</b>support &amp; development</div>
         <div><b>1 day</b>reply time</div>
         <div><b>$0</b>first review</div>
       </div>
@@ -455,10 +469,10 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
           <path class="stone" style="--i:1" d="M166.22 57.61 A80 80 0 0 1 180.00 102.50 L148.00 102.50 A48 48 0 0 0 140.30 76.43Z"/>
           <path class="stone key" d="M77.76 25.65 A80 80 0 0 1 122.24 25.65 L112.34 56.11 A48 48 0 0 0 87.66 56.11Z"/>
         </svg>
-        <div class="tag t2"><i></i><span>Brand &amp; promotion</span></div>
-        <div class="tag t1"><i></i><span>Admin &amp; assistant</span></div>
-        <div class="tag t3"><i></i><span>Websites &amp; digital</span></div>
-        <div class="tag t4"><i></i><span>Cost savings</span></div>
+        <div class="tag t2"><i></i><span>Promotion</span></div>
+        <div class="tag t1"><i></i><span>Admin &amp; operations</span></div>
+        <div class="tag t3"><i></i><span>Opportunities</span></div>
+        <div class="tag t4"><i></i><span>Website &amp; savings</span></div>
         <div class="tag k t5"><i></i><span>Keystone holds it together</span></div>
       </div>
     </div>
@@ -467,15 +481,15 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
 </section>
 
 <div class="marquee" aria-hidden="true"><div class="track">
-  <span>Bills &amp; renewals</span><span>Bookings &amp; scheduling</span><span>Social media plans</span><span>Press kits &amp; bios</span><span>Websites &amp; security</span><span>Google visibility</span><span>Subscription audits</span><span>Documents &amp; letters</span><span>Research &amp; purchasing</span><span>Launch plans</span>
-  <span>Bills &amp; renewals</span><span>Bookings &amp; scheduling</span><span>Social media plans</span><span>Press kits &amp; bios</span><span>Websites &amp; security</span><span>Google visibility</span><span>Subscription audits</span><span>Documents &amp; letters</span><span>Research &amp; purchasing</span><span>Launch plans</span>
+  <span>Bills &amp; renewals</span><span>Bookings &amp; scheduling</span><span>Social media plans</span><span>Press kits &amp; bios</span><span>Partnerships &amp; outreach</span><span>Google visibility</span><span>Subscription audits</span><span>Documents &amp; letters</span><span>Research &amp; purchasing</span><span>Launch plans</span>
+  <span>Bills &amp; renewals</span><span>Bookings &amp; scheduling</span><span>Social media plans</span><span>Press kits &amp; bios</span><span>Partnerships &amp; outreach</span><span>Google visibility</span><span>Subscription audits</span><span>Documents &amp; letters</span><span>Research &amp; purchasing</span><span>Launch plans</span>
 </div></div>
 
 <!-- IDEA -->
 <section class="idea" id="idea">
   <div class="wrap">
     <span class="eyebrow" data-reveal>Why the name</span>
-    <p id="ideaText" style="margin-top:26px">In an arch, the keystone is the last stone set at the top. It locks every other stone in place, and without it the whole thing falls. That is our job: to be the one partner that holds your business and your personal life together.</p>
+    <p id="ideaText" style="margin-top:26px">In an arch, the keystone is the last stone set at the top. It locks every other stone in place, and without it the whole thing falls. That is our job: to be the one partner that holds your business together — keeping it running, and helping it grow.</p>
   </div>
 </section>
 
@@ -483,37 +497,62 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
 <section class="band" id="services">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="eyebrow" data-reveal>Services</span><h2 data-reveal style="--d:1">Support for your business <span class="serif grad">and your life.</span></h2></div>
-      <p class="lead" data-reveal style="--d:2">Four areas, one partner. Mix and match what you need — each covers something people usually pay a separate company for, or lose evenings doing themselves.</p>
+      <div><span class="eyebrow" data-reveal>Services</span><h2 data-reveal style="--d:1">Support keeps it running. <span class="serif grad">Development helps it grow.</span></h2></div>
+      <p class="lead" data-reveal style="--d:2">Buy either side or both. Each covers something solo owners usually pay a separate company for, or lose evenings doing themselves.</p>
     </div>
-    <div class="services">
+    <div class="side-head" data-reveal><span>Support</span><i></i><small>Keep the business running</small></div>
+    <div class="services s3">
       <article class="card spot" data-reveal style="--d:0">
         <span class="num">01</span>
         <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
-        <h3>Admin &amp; assistant</h3>
-        <span class="for">Business · Personal</span><p>The paperwork and errands that eat your week.</p>
-        <ul><li>Bills, renewals and deadlines tracked</li><li>Appointments and services booked</li><li>Emails, letters and documents drafted</li><li>Research before big purchases</li><li>Trip planning and follow-ups</li></ul>
+        <h3>Admin &amp; operations</h3>
+        <span class="for">Support</span><p>The paperwork and follow-ups that eat your week.</p>
+        <ul><li>Email, scheduling and follow-ups</li><li>Bills, renewals and deadlines tracked</li><li>Documents and letters drafted</li><li>Personal assistant add-on for owners</li></ul>
       </article>
       <article class="card spot" data-reveal style="--d:1">
         <span class="num">02</span>
-        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></div>
-        <h3>Brand &amp; promotion</h3>
-        <span class="for">Business · Personal</span><p>Look established and get noticed.</p>
-        <ul><li>Professional bios and press kits</li><li>Social media plans and captions</li><li>Launch plans for products and events</li><li>Announcements and outreach emails</li><li>Google listings and advertising</li></ul>
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg></div>
+        <h3>Website care</h3>
+        <span class="for">Support</span><p>A site that works, stays safe and loads fast.</p>
+        <ul><li>Updates, security and backups</li><li>Hack cleanup and recovery</li><li>Speed and Google fixes</li><li>Small edits on request</li></ul>
       </article>
       <article class="card spot" data-reveal style="--d:2">
         <span class="num">03</span>
-        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg></div>
-        <h3>Websites &amp; digital</h3>
-        <span class="for">Business</span><p>A site that works, stays safe and gets found.</p>
-        <ul><li>New websites and redesigns</li><li>Hack cleanup and security setup</li><li>Backups, updates and monitoring</li><li>Speed and Google improvements</li><li>Content updates on request</li></ul>
-      </article>
-      <article class="card spot" data-reveal style="--d:3">
-        <span class="num">04</span>
         <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.5-.8-1.5-1.2-2.8-1.2-1.7 0-2.8.8-2.8 2s1.1 1.6 2.8 2 2.8.8 2.8 2-1.1 2-2.8 2c-1.3 0-2.3-.4-2.8-1.2M12 6v2M12 16v2"/></svg></div>
         <h3>Cost savings</h3>
-        <span class="for">Business · Personal</span><p>Stop paying for what you don't use.</p>
-        <ul><li>Software, hosting and domains</li><li>Subscriptions and memberships</li><li>Phone, internet and service plans</li><li>A clear keep / cancel / switch list</li><li>Free as a first step</li></ul>
+        <span class="for">Support</span><p>Stop paying for what you don't use.</p>
+        <ul><li>Software, hosting and domains</li><li>Subscriptions and memberships</li><li>Phone, internet and service plans</li><li>A clear keep, cancel or switch list</li></ul>
+      </article>
+    </div>
+    <div class="side-head" data-reveal style="margin-top:44px"><span>Development</span><i></i><small>Help the business grow</small></div>
+    <div class="services">
+      <article class="card spot" data-reveal style="--d:0">
+        <span class="num">04</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></div>
+        <h3>Brand &amp; presence</h3>
+        <span class="for">Development</span><p>Look established before the first call.</p>
+        <ul><li>New websites and redesigns</li><li>Professional bio and press kit</li><li>Google Business listing</li><li>Portfolio and case pages</li></ul>
+      </article>
+      <article class="card spot" data-reveal style="--d:1">
+        <span class="num">05</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></div>
+        <h3>Promotion</h3>
+        <span class="for">Development</span><p>Stay visible without living on social media.</p>
+        <ul><li>Monthly social media plan and captions</li><li>Launch plans for releases and events</li><li>Announcements and newsletters</li><li>Promotional images</li></ul>
+      </article>
+      <article class="card spot" data-reveal style="--d:2">
+        <span class="num">06</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 12l3 3 5-6"/><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></div>
+        <h3>Opportunities</h3>
+        <span class="for">Development</span><p>Find the next partner, deal or income stream.</p>
+        <ul><li>Partners, sponsors and collaborations</li><li>Pitch emails and proposals</li><li>Outreach and follow-up tracking</li><li>New customer groups</li></ul>
+      </article>
+      <article class="card spot" data-reveal style="--d:3">
+        <span class="num">07</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"/><path d="M8 15l4-4 3 3 5-6"/></svg></div>
+        <h3>Growth planning</h3>
+        <span class="for">Development</span><p>Know what to do next, and why.</p>
+        <ul><li>Quarterly business review</li><li>90-day plan of top moves</li><li>Pricing and offer review</li><li>Monthly results report</li></ul>
       </article>
     </div>
   </div>
@@ -527,12 +566,24 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
     </div>
     <div class="who" data-reveal>
       <div class="tabs" role="tablist">
-        <button class="tab on" role="tab" aria-selected="true" data-tab="0"><b>Small businesses</b><small>Shops, studios, service providers</small></button>
-        <button class="tab" role="tab" aria-selected="false" data-tab="1"><b>Busy professionals</b><small>Life admin, done for you</small></button>
+        <button class="tab on" role="tab" aria-selected="true" data-tab="0"><b>Solo founders</b><small>Consultants, coaches, independents</small></button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="1"><b>Small businesses</b><small>Shops, studios, service providers</small></button>
         <button class="tab" role="tab" aria-selected="false" data-tab="2"><b>Creators &amp; brands</b><small>Artists, labels, independent makers</small></button>
       </div>
       <div class="panel-wrap">
         <div class="panel on" role="tabpanel">
+          <h3>You do the work. We handle the rest.</h3>
+          <p>A typical month for a one-person business.</p>
+          <div class="tasks">
+            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Bills, renewals and deadlines on one calendar</div>
+            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Appointments and repairs booked</div>
+            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Proposals and pitch emails drafted</div>
+            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Partners and new clients researched</div>
+            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Documents organized and easy to find</div>
+            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Professional bio and online profile polished</div>
+          </div>
+        </div>
+        <div class="panel" role="tabpanel">
           <h3>Run the business, not the back office.</h3>
           <p>A typical month of support for a small business.</p>
           <div class="tasks">
@@ -542,18 +593,6 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
             <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Vendor renewals tracked before they bill</div>
             <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Software and service plans audited for savings</div>
             <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Customer emails and letters drafted</div>
-          </div>
-        </div>
-        <div class="panel" role="tabpanel">
-          <h3>Get your evenings back.</h3>
-          <p>The life admin that piles up when work is busy.</p>
-          <div class="tasks">
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Bills, renewals and deadlines on one calendar</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Appointments and repairs booked</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Trips researched, compared and planned</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Big purchases researched before you buy</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Documents organized and easy to find</div>
-            <div class="task"><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Professional bio and online profile polished</div>
           </div>
         </div>
         <div class="panel" role="tabpanel">
@@ -598,10 +637,10 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
     <div class="calc" data-reveal>
       <div class="calc-in">
         <h3>What you pay today</h3>
-        <p>Monthly amounts. Starting values are examples — set your own.</p>
-        <div class="slider-row"><label for="s1"><div>Assistant or admin help<span>Bills, bookings, documents, errands</span></div><output id="o1">$0</output></label><input type="range" id="s1" min="0" max="2000" step="25" value="0"></div>
-        <div class="slider-row"><label for="s2"><div>Marketing and social media<span>Posts, captions, promotion, listings</span></div><output id="o2">$0</output></label><input type="range" id="s2" min="0" max="1500" step="25" value="300"></div>
-        <div class="slider-row"><label for="s3"><div>Website upkeep and fixes<span>Maintenance, updates, security</span></div><output id="o3">$0</output></label><input type="range" id="s3" min="0" max="500" step="5" value="100"></div>
+        <p>Monthly amounts. Starting values are typical market prices — set your own.</p>
+        <div class="slider-row"><label for="s1"><div>Assistant or admin help<span>Bills, bookings, documents, errands</span></div><output id="o1">$0</output></label><input type="range" id="s1" min="0" max="3000" step="25" value="800"></div>
+        <div class="slider-row"><label for="s2"><div>Marketing and social media<span>Posts, captions, promotion, listings</span></div><output id="o2">$0</output></label><input type="range" id="s2" min="0" max="3000" step="25" value="750"></div>
+        <div class="slider-row"><label for="s3"><div>Website upkeep and fixes<span>Maintenance, updates, security</span></div><output id="o3">$0</output></label><input type="range" id="s3" min="0" max="500" step="1" value="89"></div>
         <div class="slider-row" style="margin-bottom:0"><label for="s4"><div>Subscriptions you rarely use<span>Software, memberships, extra plans</span></div><output id="o4">$0</output></label><input type="range" id="s4" min="0" max="300" step="5" value="40"></div>
       </div>
       <div class="calc-out" aria-live="polite">
@@ -614,7 +653,7 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
           <div><span>Plan price</span><b id="planPrice">$0</b></div>
         </div>
         <a href="#contact" class="btn gold magnet" id="calcCta" style="align-self:flex-start">Lock in these savings <span class="arr">→</span></a>
-        <p class="fine">An estimate from the amounts you enter, not a quote. Unused subscriptions are counted as savings found in the free cost review.</p>
+        <p class="fine">An estimate from the amounts you enter, not a quote. Starting values: a part-time United States assistant (about 20 hours at $40), social media management from $750, website care from $89. Plans include set hours; the free review checks the right fit. Unused subscriptions are counted as savings found in the free cost review.</p>
       </div>
     </div>
   </div>
@@ -625,54 +664,47 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
   <div class="wrap">
     <div class="sec-head">
       <div><span class="eyebrow" data-reveal>Plans</span><h2 data-reveal style="--d:1">Simple monthly plans.</h2></div>
-      <p class="lead" data-reveal style="--d:2">Cancel anytime. Comparisons are published market prices.</p>
+      <p class="lead" data-reveal style="--d:2">Pick one side or both. Comparisons are published market prices.</p>
     </div>
-    <div class="plans">
-      <div class="plan" data-reveal style="--d:0">
-        <h3>Website Care</h3><div class="who-for">Keep your online presence safe and current</div>
-        <div class="price" data-price="45">$45<small> / month</small></div>
-        <ul>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Updates and security monitoring</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Automatic backups</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Short monthly report</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 1 hour of edits</li>
-        </ul>
-        <div class="compare">Freelancers typically charge $50–150 a month for maintenance.</div>
+    <div class="plans p4">
+      <div class="plan p4c" data-reveal style="--d:0">
+        <h3>Website Care</h3><div class="who-for">Keep your site safe and current</div>
+        <div class="price">$59<small> / month</small></div>
+        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Updates and security monitoring</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Automatic backups</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Short monthly report</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 1 hour of edits</li></ul>
+        <div class="compare">Website care companies charge from $89 a month.</div>
         <a href="#contact" class="btn ghost" data-plan="Website Care">Choose Website Care</a>
       </div>
-      <div class="plan pop" data-reveal style="--d:1">
-        <span class="badge">Most popular</span>
-        <h3>Grow</h3><div class="who-for">Get noticed and stay visible</div>
-        <div class="price">$175<small> / month</small></div>
-        <ul>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Website Care</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Monthly social media plan and captions</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Google search report and fixes</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 4 hours of content or design</li>
-        </ul>
-        <div class="compare">Agencies charge $100–500 or more a month for maintenance alone.</div>
-        <a href="#contact" class="btn gold" data-plan="Grow">Choose Grow</a>
+      <div class="plan p4c" data-reveal style="--d:1">
+        <h3>Support</h3><div class="who-for">Keep the business running</div>
+        <div class="price">$350<small> / month</small></div>
+        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Website Care</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Admin, email and scheduling</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Renewals and deadlines tracked</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Savings checks</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 5 hours a month</li></ul>
+        <div class="compare">Assistant hours alone don't include website care or savings reviews.</div>
+        <a href="#contact" class="btn ghost" data-plan="Support">Choose Support</a>
       </div>
-      <div class="plan" data-reveal style="--d:2">
-        <h3>Full Support</h3><div class="who-for">Your business and admin, handled</div>
-        <div class="price">$450<small> / month</small></div>
-        <ul>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Grow</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Personal assistant work: bills, bookings, research, documents</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 15 hours a month</li>
-          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Priority replies</li>
-        </ul>
-        <div class="compare">Managed assistant services start around $1,599 a month.</div>
-        <a href="#contact" class="btn ghost" data-plan="Full Support">Choose Full Support</a>
+      <div class="plan p4c" data-reveal style="--d:2">
+        <h3>Development</h3><div class="who-for">Help the business grow</div>
+        <div class="price">$650<small> / month</small></div>
+        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Monthly promotion plan and captions</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Google listing kept current</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Opportunity and partner outreach</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Monthly results report</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 8 hours a month</li></ul>
+        <div class="compare">Freelance social media management alone starts around $750 a month.</div>
+        <a href="#contact" class="btn ghost" data-plan="Development">Choose Development</a>
+      </div>
+      <div class="plan p4c pop" data-reveal style="--d:3"><span class="badge">Most complete</span>
+        <h3>Support &amp; Development</h3><div class="who-for">Both sides, one partner</div>
+        <div class="price">$1,200<small> / month</small></div>
+        <ul><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Everything in Support and Development</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Priority replies</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Quarterly growth review and 90-day plan</li><li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>Up to 15 hours a month</li></ul>
+        <div class="compare">Online business managers charge about $2,499 a month; full-time executive assistants about $3,000.</div>
+        <a href="#contact" class="btn gold" data-plan="Support &amp; Development">Choose Support &amp; Development</a>
       </div>
     </div>
+    <div class="terms" data-reveal><span>3-month minimum, then month to month</span><span>Extra hours $75, agreed in advance</span><span>Personal assistant hours available as an add-on</span></div>
     <div class="projects" data-reveal>
       <div class="ph"><h3>One-time projects</h3><span class="pill">Fixed price, agreed up front</span></div>
       <div class="prow hd"><span>Project</span><span>Starting at</span><span>Typical market price</span></div>
-      <div class="prow"><span>Cost savings review</span><b>Free</b><span>—</span></div>
-      <div class="prow"><span>Launch package (plan, captions, announcement, outreach emails)</span><b>$200</b><span>Quoted per project</span></div>
-      <div class="prow"><span>Press kit or professional bio</span><b>$250</b><span>Quoted per project</span></div>
-      <div class="prow"><span>Hack cleanup and security setup</span><b>$850</b><span>$3,000 and up from specialist companies</span></div>
+      <div class="prow"><span>Free review of costs, presence and opportunities</span><b>Free</b><span>—</span></div>
+      <div class="prow"><span>Opportunity and cost audit with a 90-day plan</span><b>$350</b><span>Quoted per project</span></div>
+      <div class="prow"><span>Press kit or professional bio</span><b>$350</b><span>Quoted per project</span></div>
+      <div class="prow"><span>Launch package (plan, captions, announcement, outreach emails)</span><b>$450</b><span>Quoted per project</span></div>
+      <div class="prow"><span>Website rescue and security setup</span><b>$850</b><span>$3,000 and up from specialist companies</span></div>
       <div class="prow"><span>New website or full redesign</span><b>$1,500</b><span>Quoted per project</span></div>
     </div>
   </div>
@@ -745,11 +777,11 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
         <span class="fstep-n">Step 1 of 3</span>
         <h3>What can we help with?</h3>
         <div class="chips" id="needChips">
-          <label class="chip"><input type="checkbox" name="needs" value="Admin & assistant"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Admin &amp; assistant</label>
-          <label class="chip"><input type="checkbox" name="needs" value="Brand & promotion"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Brand &amp; promotion</label>
-          <label class="chip"><input type="checkbox" name="needs" value="Website & digital"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Website &amp; digital</label>
+          <label class="chip"><input type="checkbox" name="needs" value="Support"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Support — keep it running</label>
+          <label class="chip"><input type="checkbox" name="needs" value="Development"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Development — help it grow</label>
+          <label class="chip"><input type="checkbox" name="needs" value="Website"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Website build or rescue</label>
           <label class="chip"><input type="checkbox" name="needs" value="Cost savings review"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Cost savings review</label>
-          <label class="chip"><input type="checkbox" name="needs" value="Monthly plan"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>A monthly plan</label>
+          <label class="chip"><input type="checkbox" name="needs" value="Opportunities"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Partners &amp; opportunities</label>
           <label class="chip"><input type="checkbox" name="needs" value="Not sure yet"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span>Not sure yet</label>
         </div>
       </div>
@@ -757,10 +789,10 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
         <span class="fstep-n">Step 2 of 3</span>
         <h3>Tell us a little more</h3>
         <div class="two">
-          <div class="field"><label for="ftype">You are a…</label><select id="ftype" name="client_type"><option>Small business</option><option>Busy professional</option><option>Creator or brand</option><option>Other</option></select></div>
+          <div class="field"><label for="ftype">You are a…</label><select id="ftype" name="client_type"><option>Solo founder</option><option>Small business</option><option>Creator or label</option><option>Other</option></select></div>
           <div class="field"><label for="ftime">Timeline</label><select id="ftime" name="timeline"><option>As soon as possible</option><option>This month</option><option>In the next few months</option><option>Just exploring</option></select></div>
         </div>
-        <div class="field"><label for="fplan">Plan or budget</label><select id="fplan" name="plan"><option>Not sure yet</option><option>Website Care — $45/month</option><option>Grow — $175/month</option><option>Full Support — $450/month</option><option>One-time project</option></select></div>
+        <div class="field"><label for="fplan">Plan or budget</label><select id="fplan" name="plan"><option>Not sure yet</option><option>Website Care — $59/month</option><option>Support — $350/month</option><option>Development — $650/month</option><option>Support &amp; Development — $1,200/month</option><option>One-time project</option></select></div>
         <div class="field"><label for="fmsg">What's going on? <span style="color:var(--dim);font-weight:500">(optional)</span></label><textarea id="fmsg" name="message" placeholder="A sentence or two about what you need help with"></textarea></div>
       </div>
       <div class="fstep" data-step="2">
@@ -792,7 +824,7 @@ footer{border-top:1px solid var(--line);padding:60px 0 40px;color:var(--muted);f
     <div class="foot">
       <div>
         <a href="#top" class="brand"><svg viewBox="14 18 172 160" aria-hidden="true"><path fill="#e8eef4" d="M20 107.7H52V174.5H20Z"/><path fill="#e8eef4" d="M148 107.7H180V174.5H148Z"/><path fill="#e8eef4" d="M20.00 102.50 A80 80 0 0 1 33.78 57.61 L59.70 76.43 A48 48 0 0 0 52.00 102.50Z"/><path fill="#e8eef4" d="M36.84 53.40 A80 80 0 0 1 72.82 27.26 L82.72 57.72 A48 48 0 0 0 62.75 72.22Z"/><path fill="#e8eef4" d="M127.18 27.26 A80 80 0 0 1 163.16 53.40 L137.25 72.22 A48 48 0 0 0 117.28 57.72Z"/><path fill="#e8eef4" d="M166.22 57.61 A80 80 0 0 1 180.00 102.50 L148.00 102.50 A48 48 0 0 0 140.30 76.43Z"/><path fill="#c9973f" d="M77.76 25.65 A80 80 0 0 1 122.24 25.65 L112.34 56.11 A48 48 0 0 0 87.66 56.11Z"/></svg><span>Keystone Support Co.<small>Est. 2024</small></span></a>
-        <p>One trusted partner for your business and your life — admin, promotion, online presence and savings.</p>
+        <p>Support and development for solo founders and creatives — one partner that keeps the business running and helps it grow.</p>
       </div>
       <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#savings">Savings calculator</a></li><li><a href="#plans">Plans</a></li><li><a href="#work">Case study</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><a href="mailto:keystonesupportco@gmail.com">keystonesupportco@gmail.com</a></li><li><a href="#contact">Free cost review</a></li><li>Remote · clients anywhere</li></ul></div>
@@ -865,7 +897,7 @@ function calc(){
   const v=S.map(s=>+s.value);
   S.forEach((s,i)=>{s.style.setProperty('--fill',(v[i]-s.min)/(s.max-s.min)*100+'%');O[i].textContent=fmt(v[i])});
   const [asst,mkt,web,subs]=v;const today=asst+mkt+web+subs;
-  let plan=null;if(asst>0)plan=['Full Support',450];else if(mkt>0)plan=['Grow',175];else if(web>0)plan=['Website Care',45];
+  let plan=null;if(mkt>0&&(asst>0||web>0))plan=['Support & Development',1200];else if(mkt>0)plan=['Development',650];else if(asst>0)plan=['Support',350];else if(web>0)plan=['Website Care',59];
   const price=plan?plan[1]:0;const save=Math.max(0,today-price);
   $('#planName').textContent=plan?plan[0]:'Free cost review';$('#planPrice').textContent=fmt(price);
   tween('today',$('#today'),today,fmt);tween('yearly',$('#yearly'),save*12,fmt);tween('monthly',$('#monthly'),save,n=>fmt(n)+' a month');
@@ -883,7 +915,7 @@ $('#copyBtn').addEventListener('click',async e=>{const b=e.currentTarget;try{awa
 
 // plan buttons preselect
 const fplan=$('#fplan');
-$$('[data-plan]').forEach(b=>b.addEventListener('click',()=>{const p=b.dataset.plan;if(!p)return;[...fplan.options].forEach(o=>{if(o.text.startsWith(p))fplan.value=o.value})}));
+$$('[data-plan]').forEach(b=>b.addEventListener('click',()=>{const p=b.dataset.plan;if(!p)return;[...fplan.options].forEach(o=>{if(o.text.startsWith(p+' —'))fplan.value=o.value})}));
 
 // multi-step form
 const form=$('#qform'),steps3=$$('.fstep'),bars=$$('.fprog i'),next=$('#fnext'),back=$('#fback'),err=$('#ferr');let step=0;
